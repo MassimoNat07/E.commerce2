@@ -1,0 +1,56 @@
+.header {
+  border: 1px solid gold;
+  background-color: CadetBlue; /* oppure DarkSeaGreen - */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.AccessName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonAccess,
+.log-out {
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #dc3545;
+  border: 0px solid #dc3545;
+}
+
+a,
+p {
+  text-decoration: none;
+  margin-left: 5px;
+  color: white;
+}
+
+/* a:hover {
+  color: green;
+} */   
+
+.routeHeader:hover{
+ color: gold;
+}
+
+.cart {
+  font-size: 30px;
+}
+
+
+.cart:hover {
+color:red
+}
+
+
+.SiteTitle {
+  color: gold;
+  text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.8);
+  font-family: "Merienda", ExtraBold;
+}

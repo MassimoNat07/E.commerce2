@@ -1,0 +1,21 @@
+spiegare come ho costruito questi elementi 
+
+
+chunksize: let i = 0;: Iniziamo con i impostato a 0. Questo è l'indice iniziale da cui inizia l'iterazione attraverso l'array array.
+Condizione di continuazione del ciclo:
+
+i < array.length;: Il ciclo continua fintanto che i è minore della lunghezza dell'array array. Questo assicura che non superiamo i limiti dell'array durante l'iterazione.
+Incremento di i ad ogni iterazione:
+
+i += chunkSize: Questo è il passo di incremento del ciclo for. Ad ogni iterazione del ciclo, i viene incrementato di chunkSize.
+Cosa significa questo in pratica?
+Divisione dell'array in chunk: Il motivo per cui incrementiamo i di chunkSize ad ogni iterazione è perché vogliamo avanzare nell'array array prendendo solo chunkSize elementi alla volta.
+
+Esempio pratico: Supponiamo di avere un array con 10 elementi (array.length è 10) e chunkSize è 3. In questo caso, il ciclo si comporta in questo modo:
+
+All'iterazione 0: i è 0, quindi estraiamo i primi 3 elementi (array.slice(0, 3)).
+All'iterazione 1: i è incrementato di 3, quindi estraiamo i successivi 3 elementi (array.slice(3, 6)).
+All'iterazione 2: i è incrementato di 3 di nuovo, quindi estraiamo i successivi 3 elementi (array.slice(6, 9)).
+All'iterazione 3: i è incrementato di 3, ma ora i + chunkSize (9) è uguale a array.length, quindi estraiamo l'ultimo chunk che contiene un solo elemento (array.slice(9, 10)).
+
+Dopo aver suddivido il mio array storeData in 5 gruppi da quattro elementi,  devo  far si che due elementi siano sopra il gruppo e due sotto ( ho notato che esce un gruppo messo a riga e io invece ne voglio in colonna solo che con css non sono riuscito a delinearlo), per farlo uso il mio htlm nel return dove mi richiamo due volte il div class "cardRow" e delineo lo slice

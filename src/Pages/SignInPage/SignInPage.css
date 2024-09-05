@@ -1,0 +1,122 @@
+.formSignIn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.SignInTitle {
+  font-size: 100px;
+  color: gold;
+  text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.8);
+  font-family: "Merienda", ExtraBold;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonSignIn {
+  width: 150px;
+  height: 50px;
+  background-color: CadetBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.buttonSignIn,
+p {
+  font-size: 22px;
+  color: white;
+}
+
+.indirizzo {
+  width: 357px;
+  height: 40px;
+  margin-left: 77px;
+  box-shadow: inset 0px 0px 2px 2px CadetBlue;
+  text-align: center; /* Centra orizzontalmente il testo, incluso il placeholder */
+  font-size: 22px;
+  color: CadetBlue;
+  font-weight: bold;
+}
+
+.civico {
+  width: 35px;
+  height: 40px;
+  margin-left: 10px;
+  box-shadow: inset 0px 0px 2px 2px CadetBlue;
+  text-align: center; /* Centra orizzontalmente il testo, incluso il placeholder */
+  font-size: 22px;
+  color: CadetBlue;
+  font-weight: bold;
+}
+
+.inputFormSignin {
+  width: 357px;
+  height: 40px;
+  margin-left: 25px;
+  box-shadow: inset 0px 0px 2px 2px CadetBlue;
+  text-align: center; /* Centra orizzontalmente il testo, incluso il placeholder */
+  font-size: 22px;
+  color: CadetBlue;
+  font-weight: bold;
+}
+
+.inputFormSignin::placeholder {
+  color: CadetBlue;
+  font-weight: bold; /* Rende il placeholder più calcato */
+  font-size: 22px; /* Aumenta la dimensione del font */
+}
+
+.selectForm {
+  width: 363px;
+  height: 40px;
+  margin-left: 25px;
+  box-shadow: inset 0px 0px 2px 2px CadetBlue;
+  text-align: center; /* Centra orizzontalmente il testo, incluso il placeholder */
+  font-size: 22px;
+  color: CadetBlue;
+  font-weight: bold;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.radioPayment {
+  font-size: 22px;
+  margin-left: 38px;
+  display: flex;
+  gap: 20px;
+}
+
+.radiocard{
+  transform: scale(1.9);
+
+}
+
+.mastercard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;v
+}
+
+.mastercard,
+p {
+  font-size: 2px;
+}
+
+.cvc {
+  font-size: 22px;
+  color: CadetBlue;
+  box-shadow: inset 0px 0px 2px 2px CadetBlue;
+  width: 50px;
+  margin-left: 20px;
+   height: 30px;
+   margin-top: 20px;
+}

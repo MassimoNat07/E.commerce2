@@ -1,0 +1,73 @@
+.productDetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+.details {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.details,
+p {
+  color: black;
+}
+
+.descriptionProduct {
+  display: flex;
+  width: 900px;
+  flex-direction: column;
+}
+
+.price {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title {
+  colro: black;
+}
+
+.buttonSell {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.buttonBuy {
+  background-color: CadetBlue;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Times new roman";
+}
+
+.image {
+  height: 500px;
+  width: 515px;
+}
+
+.spedizione {
+  margin-left: 300px;
+  background-color: pearl;
+  box-shadow: 0 0px 50px 1px DarkSeaGreen;
+  width: 415px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.spedizioneIndirizzo,
+.spedizioneCittà {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+   font-family: "Merienda", ExtraBold;
+  
+}

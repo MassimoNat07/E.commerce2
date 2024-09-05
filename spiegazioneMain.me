@@ -1,0 +1,19 @@
+Nel main ci interessa creare la gestione delle pagine. Ogni volta che dobbiamo creare una rotta per accedere ad una pagina di un sito web, dobbiamo lavorare nel main di react.  per accedere alle rotte dobbiamo aggiungere la libreria di react-router -dom
+
+createBrowserRouter è una funzione che permette di creare un router basato sulla storia del browser (history API), che è la scelta giusta per la maggior parte delle applicazioni web. 
+
+RouterProvider è un componente che fornisce il router all'intera applicazione.
+
+successivamente è molto importante creare il contesto con usecontext in un altro componente: Il contesto CurrentUserContext che hai definito è progettato per gestire lo stato dell'utente corrente in un'applicazione React. Ciò significa che fornisce un modo centralizzato per memorizzare e accedere alle informazioni sull'utente che è attualmente autenticato nell'applicazione.
+Significato del Contesto
+Gestione Centralizzata dello Stato dell'Utente:
+Quando dico che il contesto gestisce lo stato dell'utente, intendo che memorizza i dati dell'utente (come nome, email, ruolo, ecc.) in un luogo centrale. Questo evita la necessità di passare manualmente le informazioni sull'utente da un componente all'altro tramite props, semplificando così la gestione dello stato globale dell'applicazione.
+Accesso da Qualsiasi Componente:Ogni componente dell'applicazione che ha accesso al contesto CurrentUserContext può accedere direttamente alle informazioni sull'utente senza dover passare attraverso molteplici livelli di gerarchia dei componenti. Ad esempio, un componente nella barra di navigazione può facilmente ottenere il nome dell'utente per visualizzarlo senza dover chiedere ai suoi genitori di passarglielo.
+Aggiornamento dello Stato dell'Utente:
+Utilizzando la funzione setUser fornita dal contesto, è possibile aggiornare facilmente lo stato dell'utente. Ad esempio, quando un utente effettua l'accesso o si disconnette, puoi chiamare setUser per aggiornare le informazioni sull'utente e far riflettere questi cambiamenti in tutta l'applicazione.
+L'utilizzo di QueryClient da @tanstack/react-query permette di gestire e memorizzare in cache le query di dati nella tua applicazione React. Integrare QueryClient con il router e il contesto utente aiuta a creare un'applicazione reattiva e performante. 
+
+
+QueryClientProvider è un componente React che fornisce il QueryClient a tutta l'applicazione tramite il contesto. Questo componente deve avvolgere l'intera applicazione (o almeno le parti che necessitano di utilizzare le query) per permettere l'accesso al QueryClient.
+
+Si fanno poi le rotte pubbliche e le rotte private che saranno due componenti che verranno richiamati nel main, in questi componenti si scrivera del codice che potrà identificare se c'è l'utente. se l'utente c'è potrà accedere in determinate rotte, se l'utente non c'è allora saranno identigficate rotte differenti

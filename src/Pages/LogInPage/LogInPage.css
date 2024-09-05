@@ -1,0 +1,47 @@
+.logInForm {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginInput {
+  width: 350px;
+  height: 40px;
+  margin-left: 25px;
+  box-shadow: inset 0px 0px 2px 2px CadetBlue;
+  text-align: center; /* Centra orizzontalmente il testo, incluso il placeholder */
+  font-size: 22px;
+}
+
+.loginInput::placeholder {
+  color: CadetBlue;
+  font-weight: bold; /* Rende il placeholder più calcato */
+  font-size: 22px; /* Aumenta la dimensione del font */
+}
+
+.buttonLogIn {
+  width: 150px;
+  height: 50px;
+  background-color: CadetBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.buttonLogIn,
+p {
+  font-size: 22px;
+  color: white;
+}
+
+.LogInTitle {
+  font-size: 100px;
+  color: gold;
+  text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.8);
+  font-family: "Merienda", ExtraBold;
+  display: flex;
+  justify-content: center;
+  //text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
+}

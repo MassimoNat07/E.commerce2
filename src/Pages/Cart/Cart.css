@@ -1,0 +1,21 @@
+.cartPage {
+  background-color: orange;
+  min-height: 100vh;
+}
+
+.imageCart {
+  max-width: 70px;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+.cartPrice{
+    font-size: 22px;
+  font-weight: bold;
+}
+
+.RemoveAndPrice{
+  display:flex;
+  gap:50px;
+}
