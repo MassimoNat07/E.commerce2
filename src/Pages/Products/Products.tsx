@@ -28,6 +28,9 @@ export const Products = () => {
     return storedCart ? JSON.parse(storedCart) : [];
   });
 
+  const dataSignInHeader = localStorage.getItem("DataSignIn");
+  const isAuthenticated = !!dataSignInHeader; //const isAuthenticated = dataSignInHeader ? true : false;
+
   const [buy, setBuy] = useState<ProductDetails[]>(() => {
     const storedBuy = localStorage.getItem("buy");
     return storedBuy ? JSON.parse(storedBuy) : [];
@@ -39,17 +42,20 @@ export const Products = () => {
       setCart(updatedCart);
 
       localStorage.setItem("cart", JSON.stringify(updatedCart));
+      navigate("/insideCart");
     }
   };
 
   const buyNow = () => {
-    if (productDetails) {
+    if (isAuthenticated && productDetails) {
       const updatedBuy = [...buy, productDetails];
       setBuy(updatedBuy);
 
       localStorage.setItem("buy", JSON.stringify(updatedBuy));
+      navigate("/confirmation");
+    } else {
+      navigate("/enter");
     }
-    navigate("/confirmation");
   };
 
   const dataSignInAside = localStorage.getItem("DataSignIn");
@@ -105,5 +111,5 @@ export const Products = () => {
         </button>
       </div>
     </>
-  ); // adesso devo salvare il prodotto nel carrello. Ogni vllta che si clicca aggiungi al carrello il prodotto selezionato deve essere salvato in un local storage chiamato "cart", nella pagina del carrello dovrò chiamare il prodotto.
+  );
 };

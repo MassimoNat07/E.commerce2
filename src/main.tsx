@@ -13,8 +13,9 @@ import { Cart } from "./Pages/Cart/Cart";
 import { Confirmation } from "./Pages/Confirmation/Confirmation";
 import { ConfirmationDelete } from "./Pages/ConfirnDeleteOrder/ConfirmDelete";
 import { Success } from "./Pages/Success/Success";
+import { InsideCart } from "./Pages/InsideCart/InsideCart";
 import { CancelOrder } from "./Pages/CancelOrder/CancelOrder";
-import{Profile} from "./Pages/Profile/Profile";
+import { Profile } from "./Pages/Profile/Profile";
 //import { PrivateRoute } from "./components/PrivateRoute/privateRoute";
 import { PublicRoute } from "./components/PublicRoute/publicRoute";
 import { CurrentUserContextProvider } from "./context/currentUserContext";
@@ -62,6 +63,12 @@ const router = createBrowserRouter([
         path: "/success", // questa pagina deve essere privata, ci puoi entrare solo se sei registrato
         element: <Success />,
       },
+
+      { path: "/insideCart", 
+
+        element: <InsideCart/> 
+      },
+
       {
         path: "/cancel",
         element: <CancelOrder />,

@@ -7,7 +7,7 @@ import "./Cart.css";
 export function Cart() {
   const [cartProducts, setCartProducts] = useState<ProductDetails[]>([]);
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedCart = localStorage.getItem("cart");
@@ -16,10 +16,17 @@ export function Cart() {
     }
   }, []);
 
-  const handlePurchase = () => {
-    navigate("/confirmation");
-  };
+  const dataSignInHeader = localStorage.getItem("DataSignIn");
+  const isAuthenticated = !!dataSignInHeader; //const isAuthenticated = dataSignInHeader ? true : false;
 
+
+  const handlePurchase = () => {
+    if (isAuthenticated) {
+      navigate("/confirmation");
+    } else {
+      navigate("/enter");
+    }
+  };
 
   const handleRemove = (productId: number) => {
     const updatedCart = cartProducts.filter(
@@ -78,3 +85,4 @@ export function Cart() {
     </>
   );
 } // cardare i prodotti nel carrello, quando aggiungi al carrello deve esserci un altra pagina che ti dice che è stato aggiunto al carrello
+// ricorda di aggiungere la riga di codice che ti rimanda ad un autenticazione (registrazione) quando provi ad acquistare. questa cosa è stata già implementata su ordini
