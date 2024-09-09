@@ -53,8 +53,7 @@ export function Order() {
       </div>
     </>
   );
-} // quando ti loggi con un altro account gli ordini sono differenti oppure noti che sono gli stessi? in questo caso bisogna passare a prisma
+} 
 
-//acquista ora- bisogna realizzarla
 
 // sistemare il profilo

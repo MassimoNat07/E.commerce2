@@ -16,6 +16,7 @@ import { Success } from "./Pages/Success/Success";
 import { InsideCart } from "./Pages/InsideCart/InsideCart";
 import { CancelOrder } from "./Pages/CancelOrder/CancelOrder";
 import { Profile } from "./Pages/Profile/Profile";
+import{EditProfile} from "./Pages/Profile/EditProfile";
 //import { PrivateRoute } from "./components/PrivateRoute/privateRoute";
 import { PublicRoute } from "./components/PublicRoute/publicRoute";
 import { CurrentUserContextProvider } from "./context/currentUserContext";
@@ -91,6 +92,11 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <Profile />,
       },
+
+      { path:"/edit-profile",
+        element:<EditProfile/>
+
+      }
       // /Product/:productId dai un id alla rotta per i prodotti. ti richiami la pagina dei prodotti
       // analizzare meglio la rotta pubblica
     ],

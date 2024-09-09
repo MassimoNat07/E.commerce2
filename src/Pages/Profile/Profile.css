@@ -1,0 +1,79 @@
+.profileCardData {
+  border: 2px solid black;
+  background-color: DarkSeaGreen;
+  margin-bottom: 10px;
+}
+
+.conteinerItem {
+  display: flex;
+  gap: 60px;
+}
+
+.dataEditProfile {
+  margin-bottom: 1000px;
+}
+
+.profileCardDataCredit {
+  border: 2px solid black;
+  background-color: rgb(41, 175, 175);
+  margin-bottom: 10px;
+}
+
+.profileIcon {
+  color: rgb(33, 194, 194);
+  font-size: 50px;
+}
+
+.profileOrder {
+  border: 2px solid black;
+  background-color: DarkSeaGreen;
+  width: 30%;
+  max-height: 385px; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  display: flex;
+  flex-direction: column;
+}
+
+.profileOrderTitle {
+  font-size: 14px;
+}
+
+.orderItem {
+  display: flex;
+}
+
+.profileOrderImage {
+  width: 80px;
+  height: 80px;
+}
+
+.ProfileCart {
+    border: 2px solid black;
+    background-color: orange;
+    width: 30%;
+    max-height: 385px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profileOrderImage,
+.profileCartImage {
+  width: 50px; /* Dimensione fissa per le immagini */
+  height: 50px; /* Dimensione fissa per le immagini */
+  object-fit: cover; /* Adatta l'immagine senza distorcerla */
+  margin-right: 10px; /* Spazio tra l'immagine e il testo */
+}
+
+.profileOrderTitle,
+.profileCartTitle {
+  font-size: 14px; /* Dimensione del testo per i titoli */
+}
